@@ -12,13 +12,22 @@
   "bugs": {
     "url": "https://github.com/NewJerseyStyle/emo/issues"
   },
-  "keywords": ["coding-agent", "omo", "knowledge-base", "sdlc", "lessons-learned"],
+  "keywords": [
+    "coding-agent",
+    "omo",
+    "knowledge-base",
+    "sdlc",
+    "lessons-learned"
+  ],
   "type": "module",
   "bin": {
     "emo": "./dist/cli.js"
   },
-  "main": "./dist/kb/index.js",
-  "files": ["dist", "skills"],
+  "files": [
+    "dist",
+    "src",
+    "skills"
+  ],
   "scripts": {
     "build": "bun build ./src/cli.ts ./src/kb/index.ts ./src/driver/omo.ts ./src/driver/workitem.ts --outdir dist --root src --target node --format esm",
     "typecheck": "tsc --noEmit",
@@ -30,5 +39,11 @@
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.8.2"
+  },
+  "exports": {
+    "./cli": "./src/cli/main.ts",
+    "./kb": "./src/kb/index.ts",
+    "./skills/*": "./skills/*",
+    "./package.json": "./package.json"
   }
 }
