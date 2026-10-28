@@ -4,13 +4,13 @@
   "description": "Project-level knowledge and an SDLC-shaped loop for coding agents (omo first): plans, lessons and closures shared through a git branch",
   "author": "NewJerseyStyle",
   "license": "MIT",
-  "homepage": "https://github.com/NewJerseyStyle/emo",
+  "homepage": "https://github.com/NewJerseyStyle/emo-a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NewJerseyStyle/emo.git"
+    "url": "https://github.com/NewJerseyStyle/emo-a.git"
   },
   "bugs": {
-    "url": "https://github.com/NewJerseyStyle/emo/issues"
+    "url": "https://github.com/NewJerseyStyle/emo-a/issues"
   },
   "keywords": [
     "coding-agent",

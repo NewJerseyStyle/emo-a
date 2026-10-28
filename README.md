@@ -4,6 +4,8 @@
 
 > emo started as an OpenCode plugin (Evolve-My-OpenCode, v0.1). v0.2 is a rewrite: it no longer lives inside the agent. The data format and the process are ours; omo is reached only through a thin driver. See [docs/emo-a-design.md](docs/emo-a-design.md) for the design and [docs/vision.md](docs/vision.md) for why.
 
+> Using OpenCode 2 instead of omo? See [emo-c](https://github.com/NewJerseyStyle/emo-c), a thin plugin on this same core. The original OpenCode 1 plugin ([emo](https://github.com/NewJerseyStyle/emo)) is archived.
+
 ## Why
 
 Fast agent iteration piles up debt and loses information: dead ends are not written down, so the next session (or the next teammate's agent) spends tokens re-discovering them. emo-a makes the agent leave a trail a team can review:
@@ -35,8 +37,8 @@ emo-a is a standalone CLI. It does not run inside a coding agent; it drives one 
 Requirements: **git >= 2.42**, **Node >= 20**, and [omo](https://github.com/code-yeongyu/oh-my-openagent) **5.1.34** (the version the driver is verified against; it is only needed to run the agent, the `emo` knowledge CLI works without it). Building from source also needs [bun](https://bun.sh).
 
 ```bash
-git clone https://github.com/NewJerseyStyle/emo
-cd emo
+git clone https://github.com/NewJerseyStyle/emo-a
+cd emo-a
 bun install && bun run build
 npm link            # puts `emo` on PATH
 emo doctor          # checks git and omo
